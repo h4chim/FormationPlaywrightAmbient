@@ -1,0 +1,12 @@
+{
+"fishes": {
+"Angelfish": "FI-SW-01",
+"Tiger_Shark": "FI-SW-02",
+"Koi": "FI-FW-01",
+"Goldfish": "FI-FW-02"
+},
+"cats": {
+"Manx": "FL-DSH-01",
+"Persian": "FL-DLH-02"
+}
+}
