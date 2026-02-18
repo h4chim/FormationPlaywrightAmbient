@@ -8,9 +8,9 @@ import dotenv from 'dotenv';
  */
 // import dotenv from 'dotenv';
 // import path from 'path';
-const envName = process.env.ENV || 'local';
+//const envName = process.env.ENV || 'local';
 dotenv.config({
-  path: `env/.env.${envName}`,
+  path: `env/.env.${process.env.ENV}`,
 });
 
 /**
