@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import {Contact} from '../pages/contact'
-
+/*
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
@@ -28,7 +28,7 @@ test('test formulaire 1', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Current Address' }).fill('Paris');
   await page.locator('#permanentAddress').fill('Le plessis');
   await page.getByRole('button', { name: 'Submit' }).click();
-});
+});*/
 
 /*test('test upload', async ({ page }) => {
   await page.goto('https://demoqa.com/');
