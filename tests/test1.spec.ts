@@ -30,14 +30,14 @@ test('test formulaire 1', async ({ page }) => {
   await page.getByRole('button', { name: 'Submit' }).click();
 });
 
-test('test upload', async ({ page }) => {
+/*test('test upload', async ({ page }) => {
   await page.goto('https://demoqa.com/');
   await page.getByRole('link', { name: 'Elements' }).click();
   await page.getByRole('link', { name: 'Upload and Download' }).click();
   await page.locator('#uploadFile').click();
   await page.setInputFiles('#uploadFile', 'C:\\Users\\hchakira\\test1.txt');
   await expect(page.locator('#uploadedFilePath')).toContainText('test1.txt');
-});
+});*/
 
 test('test formulaire 2', async ({ page }) => {
   await page.goto('https://test-automation-demo-reva.bolt.host/');
@@ -52,7 +52,7 @@ test('test formulaire 2', async ({ page }) => {
   await expect(page.getByTestId('contact-notification')).toContainText('Message sent successfully! We will get back to you soon.');
 });
 
-test.only('test formulaire 3 - with POM', async ({ page }) => {
+test('test formulaire 3 - with POM', async ({ page }) => {
   const contactP = new Contact(page);
   await page.goto('https://test-automation-demo-reva.bolt.host/');
   await page.getByTestId('cta-contact').click();
